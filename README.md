@@ -1,4 +1,4 @@
-<h1>-Google: Smart AI Chatbot with Google Search + LLM Summarization</h1>
+<h1>Smart AI Chatbot with Google Search + LLM Summarization</h1>
 A powerful AI chatbot that combines real-time Google search results with state-of-the-art large language models (LLMs) to give you intelligent, accurate, and up-to-date answers. It's like having Google and ChatGPT in one supercharged assistant.
 
 <br>
@@ -69,8 +69,6 @@ python-dotenv
 
 <h2>🤖 Models Supported</h2>
 You can plug in any text generation model from Hugging Face's hosted API. Some great options:
-
-mistralai/Mixtral-8x7B-Instruct-v0.1
 
 meta-llama/Llama-2-7b-chat-hf
 
