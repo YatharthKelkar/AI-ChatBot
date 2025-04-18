@@ -62,18 +62,18 @@ def search_google(query):
             elif "highlighted_words" in ab:
                 result_parts.append("Highlights: " + ', '.join(ab["highlighted_words"]))
 
-        # People also ask
-        if "related_questions" in data:
-            result_parts.append("\nPeople also ask:")
-            for q in data["related_questions"][:3]:  # limit to top 3
-                result_parts.append(f"- {q['question']}: {q.get('snippet', 'No answer found.')}")
-
-        # Organic search results
+        # Top organic result first
         if "organic_results" in data and len(data["organic_results"]) > 0:
             first = data["organic_results"][0]
             snippet = first.get("snippet", "")
             link = first.get("link", "")
             result_parts.append(f"\nTop Result:\n{snippet}\nLink: {link}")
+
+        # Then related questions
+        if "related_questions" in data:
+            result_parts.append("\nPeople also ask:")
+            for q in data["related_questions"][:3]:  # limit to top 3
+                result_parts.append(f"- {q['question']}: {q.get('snippet', 'No answer found.')}")
 
         return "\n".join(result_parts).strip() or "No useful result found."
 
