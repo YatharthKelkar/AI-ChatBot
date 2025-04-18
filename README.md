@@ -1,4 +1,4 @@
-<h1>🔍 ChatGPT-Google: Smart AI Chatbot with Google Search + LLM Summarization</h1>
+<h1>-Google: Smart AI Chatbot with Google Search + LLM Summarization</h1>
 A powerful AI chatbot that combines real-time Google search results with state-of-the-art large language models (LLMs) to give you intelligent, accurate, and up-to-date answers. It's like having Google and ChatGPT in one supercharged assistant.
 
 <br>
