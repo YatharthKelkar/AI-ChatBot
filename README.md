@@ -94,8 +94,8 @@ Hugging Face Transformers
 
 SerpAPI
 
-Mistral AI
+
 
 <h2>📜 License</h2>
-This project is open-source and available under the MIT License.
+This project is open-source and but not under the MIT License.
 
